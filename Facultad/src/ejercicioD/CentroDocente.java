@@ -2,6 +2,7 @@ package ejercicioD;
 
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class CentroDocente {
@@ -20,9 +21,9 @@ public class CentroDocente {
 			System.out.println(personita);
 		}
 	}
-	
+	public static void main(String[] args) {
 	int op = 0;
-	scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in); 
 
 	do {
 		System.out.println("");
