@@ -7,7 +7,7 @@ public class Estudiante extends Persona{
 	
 	public Estudiante() {
 		super();
-		// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub ok
 	}
 
 	public Estudiante(String nombre, String apellidos, String id, String estadoCivil, String _curso) {
