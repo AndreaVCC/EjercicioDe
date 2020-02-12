@@ -15,7 +15,8 @@ public class Estudiante extends Persona{
 		super(nombre, apellidos, id, estadoCivil);
 		this.curso = _curso; 
 	}
-	// 
+	
+	// GETT & SETT 
 	public String getCurso() {
 		return curso;
 	}
@@ -24,6 +25,7 @@ public class Estudiante extends Persona{
 		this.curso = curso;
 	}
 
+	// TO STRING 
 	@Override
 	public String toString() {
 		return "Estudiante [curso=" + curso + super.toString() + "]";
