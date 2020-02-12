@@ -21,8 +21,11 @@ public class CentroDocente {
 			System.out.println(personita);
 		}
 	}
+	
+	//Menu
 	public static void main(String[] args) {
-	int op = 0;
+	
+		int op = 0;
 	Scanner scanner = new Scanner(System.in); 
 
 	do {
