@@ -2,9 +2,10 @@ package ejercicioD;
 
 public class Estudiante extends Persona{
     
+	//ATRIBUTO  
 	private String curso;
 
-	
+	//CONSTRUCTOR 
 	public Estudiante() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -14,7 +15,7 @@ public class Estudiante extends Persona{
 		super(nombre, apellidos, id, estadoCivil);
 		this.curso = _curso; 
 	}
-
+	// 
 	public String getCurso() {
 		return curso;
 	}
