@@ -22,6 +22,17 @@ public class CentroDocente {
 		}
 	}
 	
+	// Metodo remover persona ingresada en lista
+	public static void darDeBaja(String dni) {
+		for (int i = 0; i < listaPersona.size(); i++) {
+			if (listaPersona.get(i).getId().equals(dni)) {
+				listaPersona.remove(i);
+			
+			}
+		}
+		System.out.println("Â¡EliminaciÃ³n exitosa! :D!!");
+	} 	
+	
 	//Menu
 	public static void main(String[] args) {
 	
@@ -37,7 +48,7 @@ public class CentroDocente {
 		System.out.println("3.- Mostrar todos");
 		System.out.println("4.- Salir del programa");
 		System.out.println("-------------------");
-		System.out.println("Ingrese una opción: ");
+		System.out.println("Ingrese una opciÃ³n: ");
 
 		op = scanner.nextInt();
 		
@@ -55,7 +66,7 @@ public class CentroDocente {
 				System.out.println("Adios!!!");
 				break;
 			default:
-				System.out.println("Ingrese una opción válida");
+				System.out.println("Ingrese una opciÃ³n vÃ¡lida");
 				break;
 		}
 		
