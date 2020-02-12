@@ -13,5 +13,11 @@ public class CentroDocente {
 	ArrayList <String> listaDepartamento = new ArrayList <>();// Asignar Departamento ( Profesores ) 
 	
 	
-
+	//Metodo mostrar persona ingresada en lista
+	
+	public void muestraPersona(){
+		for(Persona personita: listaPersona) {
+			System.out.println(personita);
+		}
+	}
 }
