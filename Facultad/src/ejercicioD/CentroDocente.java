@@ -33,7 +33,7 @@ public class CentroDocente {
 		System.out.println("Menu");
 		System.out.println("--------------------");
 		System.out.println("1.- Agregar persona");
-		System.out.println("2.- Eliminar ersona");
+		System.out.println("2.- Eliminar persona");
 		System.out.println("3.- Mostrar todos");
 		System.out.println("4.- Salir del programa");
 		System.out.println("-------------------");
