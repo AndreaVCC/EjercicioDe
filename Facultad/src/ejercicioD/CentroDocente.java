@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 public class CentroDocente {
    //ArrayList < tipo de dato> Nombre = Instancia tipo ArrayList
-	ArrayList <Persona> ListaPersona = new ArrayList <>();
-	ArrayList <Integer> ListaDespachos = new ArrayList <>();
-	ArrayList <Integer> Listaseccion = new ArrayList <>();
-	ArrayList <String> ListaCurso = new ArrayList <>();
-	ArrayList <String> ListaDepartaento = new ArrayList <>();
+	ArrayList <Persona> listaPersona = new ArrayList <>(); // Hacer una lista de todas las personas
+	ArrayList <Integer> listaDespachos = new ArrayList <>();// Asignar numero de despacho ( Empleados ) 
+	ArrayList <Integer> listaseccion = new ArrayList <>();// Asignar una seccion ( P.servicio)
+	ArrayList <String> listaCurso = new ArrayList <>();// Asignar un curso (Estudiantes)
+	ArrayList <String> listaDepartamento = new ArrayList <>();// Asignar Departamento ( Profesores ) 
 	
 	
 
