@@ -1,5 +1,7 @@
 package ejercicioD;
 
+import java.util.ArrayList;
+
 public class PersonalServicio extends Persona {
 
 	private String seccion;
@@ -50,10 +52,58 @@ public class PersonalServicio extends Persona {
 		return  super.toString()+ "PersonalServicio [seccion=" + seccion + ", anioIncorporacion=" + anioIncorporacion + ", numDespacho="
 				+ numDespacho + "]";
 	}
-// ---------------------------------------------------------------------Metodos
-	public void reasignarDespacho(int nudes ){
-	        this.numDespacho = nudes;
+// --------------------------------------------------------------------- Metodos
+	
+	
+	
+	public void reasignarDespacho(ArrayList<Integer> listaDespachos, int nudes){
+	      boolean d=false;
+		  							
+		  for(int i=0; i<listaDespachos.size(); i++) //------------------buscar en el arraylist  el numero de despacho 
+			  
+			  if(listaDespachos.get(i) == nudes) { //--------------------------------comparar int con lo que está dentro
+				
+				  this.numDespacho = nudes;
+				  d=true;
+			  }
+		  
+
+		  if(d) {
+			  System.out.print("cambio exitoso");
+		  }else {
+			  System.out.print("no se encontró el número de Despacho, cambio fallido");
+		  }		  
+
 	    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public void trasladoSeccion(String tsec ){
 	        this.seccion = tsec;
