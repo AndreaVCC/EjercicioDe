@@ -22,12 +22,25 @@ public class Profesor extends Persona {
 		this.numDespacho = numDespacho ; 
 	}
 
+<<<<<<< HEAD
      public void imprimir() {
+=======
+
+		
+	public void imprimir() {
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 		
 	}
 	
+<<<<<<< HEAD
 //------------------------------------------------------------------SETT GETT
 
+=======
+
+
+//SETT GETT
+
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 	public String getDepartamento() {
 		return departamento;
 	}
@@ -40,6 +53,12 @@ public class Profesor extends Persona {
 		return anioIncorporacion;
 	}
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 	public void setAnioIncorporacion(int anioIncorporacion) {
 		this.anioIncorporacion = anioIncorporacion;
 	}
@@ -59,7 +78,18 @@ public class Profesor extends Persona {
 				+ numDespacho + "]";
 	}
 
+<<<<<<< HEAD
 //--------------------------------------------------------------------METODOS
+=======
+
+
+ 
+	
+	
+
+
+	//METODOS
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 	   public void cambiarDepartamento(ArrayList<String> lista, String dep){
 	      dep = dep.toLowerCase(); //validacion para que todos los nombres estén en minuscula 
 	      boolean d=false;
@@ -85,8 +115,21 @@ public class Profesor extends Persona {
 	        this.numDespacho = nudes;
 	    }
 }
+<<<<<<< HEAD
 //--------------------------------------------------------------------Comentarios tests
 
+=======
+
+
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
+
+
+
+
+
+
+
+<<<<<<< HEAD
 
 
 
@@ -95,11 +138,7 @@ public class Profesor extends Persona {
 
 
 
-
-
-
-
-
-
-
+=======
+//Comentarios tests
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 
