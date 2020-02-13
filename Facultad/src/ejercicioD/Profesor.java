@@ -1,6 +1,6 @@
 package ejercicioD;
 
-
+import java.util.ArrayList;
 public class Profesor extends Persona {
 	
 	//ATRIBUTO
