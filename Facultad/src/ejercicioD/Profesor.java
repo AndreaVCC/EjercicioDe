@@ -7,6 +7,13 @@ public class Profesor extends Persona {
     public String departamento;
 
     //CONSTRUCTOR
+    
+    
+    
+    public Profesor() {
+    	super ();
+    }
+    
 	public Profesor(String nombre, String apellidos, String id, String estadoCivil, String departamento) {
 		super(nombre, apellidos, id, estadoCivil);
 		this.departamento = departamento;
