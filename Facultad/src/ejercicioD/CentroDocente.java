@@ -21,7 +21,94 @@ public class CentroDocente {
 			System.out.println(personita);
 		}
 	}
-	
+	// Metodo Agregar Persona 
+	public static void agregarPersona () { 
+		Scanner sc = new Scanner( System.in);// Creacion instancia escaner 
+		int TipoPersona; // creación de la variable local " TipoPersona" , así podremos seleccionar el tipo de persona ( estudiante, Personal de Servicio, Profesor) 
+		
+		
+		
+		System.out.println("Ingrese tipo de persona: 1.- Estudiante , 2.- Personal de Servicio , 3.- Profesor. ");// El usuario lee
+		TipoPersona = sc.nextInt(); // Estamos Leyendo La opcion ingresada por teclado de la variable "Tipo persona"  con la instancia de la clase Scanner. 
+		switch ( TipoPersona) { // DEfinicion de los casos segun el valor de la variable local.
+		
+		case 1 : 
+			Estudiante est = new Estudiante();// Instancia de la Clase Estudiante que incluye los atributos master y locales
+			System.out.print("Ingrese los Datos del Estudiante");
+			
+			System.out.print("nombre: ");
+			est.setNombre(sc.next());
+			
+			System.out.print("apellido: ");
+			est.setApellidos(sc.next());
+			
+			System.out.println("ID : ");
+			est.setId(sc.next());
+			
+			System.out.println("Estado Civil : ");
+			est.setEstadoCivil(sc.next());
+			
+			System.out.println(" Curso");
+			est.setCurso(sc.next());
+			
+			listaPersona.add(est);
+			
+
+			break ;
+		
+		
+		case 2 : 
+			PersonalServicio pserv = new PersonalServicio(null, null, null, null, null);// Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
+			System.out.print("Ingrese los Datos del Personal de Servicio");
+			
+			System.out.print("nombre: ");
+			pserv.setNombre(sc.next());
+			
+			System.out.print("apellido: ");
+			pserv.setApellidos(sc.next());
+			
+			System.out.println("ID : ");
+			pserv.setId(sc.next());
+			
+			System.out.println("Estado Civil : ");
+			pserv.setEstadoCivil(sc.next());
+			
+			System.out.println("Sección : ");
+			pserv.setEstadoCivil(sc.next());
+			
+			listaPersona.add(pserv);
+			
+			break ; 
+		
+		case 3: 
+			
+			Profesor prof = new Profesor (null, null, null, null, null); // Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
+			System.out.print("Ingrese los Datos del Profesor ");
+			
+			System.out.print("nombre: ");
+			prof.setNombre(sc.next());
+			
+			System.out.print("apellido: ");
+			prof.setApellidos(sc.next());
+			
+			System.out.println("ID : ");
+			prof.setId(sc.next());
+			
+			System.out.println("Estado Civil : ");
+			prof.setEstadoCivil(sc.next());
+			
+			System.out.println(" Departamento  : ");
+			prof.setEstadoCivil(sc.next());
+			
+			listaPersona.add(prof);
+			
+			break;
+		
+		
+		
+		}
+		
+	}
 	// Metodo remover persona ingresada en lista
 	public static void darDeBaja(String dni) {
 		for (int i = 0; i < listaPersona.size(); i++) {
