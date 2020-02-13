@@ -27,14 +27,14 @@ public class CentroDocente {
 		for (int i = 0; i < listaPersona.size(); i++) {
 			if (listaPersona.get(i).getId().equals(dni)) {
 				listaPersona.remove(i);
-			
+				System.out.println("¡Eliminación exitosa! :D!!");
 			}else{
 				System.out.println("no se ha encontrado alguien con el id ingresado");
 			}		
 				
 
 		}
-		System.out.println("¡Eliminación exitosa! :D!!");
+		
 	} 	
 	
 	//Menu
