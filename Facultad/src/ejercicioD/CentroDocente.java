@@ -25,7 +25,7 @@ public class CentroDocente {
 	// Metodo Agregar Persona 
 	public static void agregarPersona () { 
 		Scanner sc = new Scanner( System.in);// Creacion instancia escaner 
-		int TipoPersona; // creación de la variable local " TipoPersona" , así podremos seleccionar el tipo de persona ( estudiante, Personal de Servicio, Profesor) 
+		int TipoPersona; // Creación de la variable local " TipoPersona" , así podremos seleccionar el tipo de persona ( estudiante, Personal de Servicio, Profesor) 
 		
 		
 		
@@ -108,7 +108,7 @@ public class CentroDocente {
 		
 		
 		}
-		
+		sc.close();
 	}
 	// Metodo remover persona ingresada en lista
 	public static void darDeBaja(String dni) {

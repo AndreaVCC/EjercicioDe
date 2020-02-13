@@ -5,16 +5,18 @@ public class Persona {
     String apellidos;
     String id;
     String estadoCivil;
-
-    public Persona(String nombre, String apellidos, String id, String estadoCivil) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.id = id;
-        this.estadoCivil = estadoCivil;
+    
+   
+	public Persona() {
     }
-
-    public Persona() {
-    }
+    
+	public Persona(String nombre, String apellidos, String id, String estadoCivil) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.id = id;
+		this.estadoCivil = estadoCivil;
+	}
 
     public String getNombre() {
         return nombre;
@@ -48,6 +50,8 @@ public class Persona {
         this.estadoCivil = estadoCivil;
     }
 
+   
+    
     @Override
     public String toString() {
         return "Alumno{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", id=" + id + ", estadoCivil=" + estadoCivil + '}';
