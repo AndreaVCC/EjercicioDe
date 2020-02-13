@@ -20,7 +20,6 @@ public class CentroDocente {
 			System.out.println(personita);
 		}
 	}
-<<<<<<< HEAD
 	
 
 	// Metodo Agregar Persona 
@@ -60,7 +59,7 @@ public class CentroDocente {
 		
 		
 		case 2 : 
-			PersonalServicio pserv = new PersonalServicio(null, null, null, null, null);// Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
+			PersonalServicio pserv = new PersonalServicio();// Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
 			System.out.print("Ingrese los Datos del Personal de Servicio");
 			
 			System.out.print("nombre: ");
@@ -84,7 +83,7 @@ public class CentroDocente {
 		
 		case 3: 
 			
-			Profesor prof = new Profesor (null, null, null, null, null); // Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
+			Profesor prof = new Profesor (); // Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
 			System.out.print("Ingrese los Datos del Profesor ");
 			
 			System.out.print("nombre: ");
