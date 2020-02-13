@@ -131,20 +131,42 @@ public class CentroDocente {
 	
 		int op = 0;
 	Scanner scanner = new Scanner(System.in); 
->>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 
-			
+	do {
+		System.out.println("");
+		System.out.println("Menu");
+		System.out.println("--------------------");
+		System.out.println("1.- Agregar persona");
+		System.out.println("2.- Eliminar persona");
+		System.out.println("3.- Mostrar todos");
+		System.out.println("4.- Salir del programa");
+		System.out.println("-------------------");
+		System.out.println("Ingrese una opciÃ³n: ");
+
+		op = scanner.nextInt();
+		
+		switch(op){
+			case 1:
+				agregarPersona();
+				break;
+			case 2:
+				darDeBaja(null);
+				break;
+			case 3:
+				muestraPersona();
+				break;
+			case 4: 
+				System.out.println("Adios!!!");
+				break;
+			default:
+				System.out.println("Ingrese una opcion valida");
+				break;
 		}
 		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}while (op != 4);
+
+	scanner.close();
+
+}
+
 }
