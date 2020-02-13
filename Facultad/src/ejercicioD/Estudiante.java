@@ -17,6 +17,10 @@ public class Estudiante extends Persona{
 		this.curso = _curso; 
 	}
 	
+	public void imprimir() {
+		
+	}
+	
 	// GETT & SETT 
 	public String getCurso() {
 		return curso;
