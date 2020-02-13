@@ -50,7 +50,7 @@ public class CentroDocente {
 			est.setEstadoCivil(sc.next());
 			
 			System.out.println(" Curso");
-			est.setCurso(sc.next());
+			est.matriculaNuevoCurso(sc.next());
 			
 			listaPersona.add(est);
 			
@@ -75,7 +75,7 @@ public class CentroDocente {
 			pserv.setEstadoCivil(sc.next());
 			
 			System.out.println("Seccion : ");
-			pserv.setEstadoCivil(sc.next());
+			pserv.setSeccion(sc.next());
 			
 			listaPersona.add(pserv);
 			
@@ -99,7 +99,7 @@ public class CentroDocente {
 			prof.setEstadoCivil(sc.next());
 			
 			System.out.println(" Departamento  : ");
-			prof.setEstadoCivil(sc.next());
+			prof.setDepartamento(sc.next());
 			
 			listaPersona.add(prof);
 			
@@ -167,5 +167,4 @@ public class CentroDocente {
 	scanner.close();
 
 }
-
 }

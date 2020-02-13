@@ -45,4 +45,3 @@ public class Profesor extends Persona {
 	
 }
 
-//Comentarios tests
