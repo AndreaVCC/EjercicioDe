@@ -12,6 +12,73 @@ public class CentroDocente {
 	static ArrayList <String> listaCurso = new ArrayList <>();// Asignar un curso (Estudiantes)
 	static ArrayList <String> listaDepartamento = new ArrayList <>();// Asignar Departamento ( Profesores ) 
 	
+	//Menu
+	public static void main(String[] args) {
+		//llenado automatico de listas
+		//departamentos
+		listaDepartamento.add(0, "lenguaje");
+		listaDepartamento.add(1, "matematicas");
+		listaDepartamento.add(2, "ciencias");
+		listaDepartamento.add(3, "religion");
+		listaDepartamento.add(4, "desarrollo personal");
+		//secciones
+		listaSeccion.add(0, "biblioteca");
+		listaSeccion.add(1, "decanato");
+		listaSeccion.add(2, "secretaria");
+		listaSeccion.add(3, "gimnasio");
+		listaSeccion.add(4, "cafeteria");
+		//despachos
+		listaDespachos.add(0, 1);
+		listaDespachos.add(1, 2);
+		listaDespachos.add(2, 3);
+		listaDespachos.add(3, 4);
+		listaDespachos.add(4, 5);
+		//cursos
+		listaCurso.add(0, "algebra");
+		listaCurso.add(1, "biologia molecular");
+		listaCurso.add(2, "astrofisica");
+		listaCurso.add(3, "caligrafia");
+		listaCurso.add(4, "curriculum");
+	
+		int op = 0;
+	Scanner scanner = new Scanner(System.in); 
+
+	do {
+		System.out.println("");
+		System.out.println("Menu");
+		System.out.println("--------------------");
+		System.out.println("1.- Agregar persona");
+		System.out.println("2.- Eliminar persona");
+		System.out.println("3.- Mostrar todos");
+		System.out.println("4.- Salir del programa");
+		System.out.println("-------------------");
+		System.out.println("Ingrese una opcion: ");
+
+		op = scanner.nextInt();
+		
+		switch(op){
+			case 1:
+				agregarPersona();
+				break;
+			case 2:
+				darDeBaja(null);
+				break;
+			case 3:
+				muestraPersona();
+				break;
+			case 4: 
+				System.out.println("Adios!!!");
+				break;
+			default:
+				System.out.println("Ingrese una opcion valida");
+				break;
+		}
+		
+	}while (op != 4);
+
+	scanner.close();
+
+}
 	
 	//Metodo mostrar persona ingresada en lista
 	
@@ -125,71 +192,5 @@ public class CentroDocente {
 		
 	} 	
 	
-	//Menu
-	public static void main(String[] args) {
-		//llenado automatico de listas
-		//departamentos
-		listaDepartamento.add(0, "lenguaje");
-		listaDepartamento.add(1, "matematicas");
-		listaDepartamento.add(2, "ciencias");
-		listaDepartamento.add(3, "religion");
-		listaDepartamento.add(4, "desarrollo personal");
-		//secciones
-		listaSeccion.add(0, "biblioteca");
-		listaSeccion.add(1, "decanato");
-		listaSeccion.add(2, "secretaria");
-		listaSeccion.add(3, "gimnasio");
-		listaSeccion.add(4, "cafeteria");
-		//despachos
-		listaDespachos.add(0, 1);
-		listaDespachos.add(1, 2);
-		listaDespachos.add(2, 3);
-		listaDespachos.add(3, 4);
-		listaDespachos.add(4, 5);
-		//cursos
-		listaCurso.add(0, "algebra");
-		listaCurso.add(1, "biologia molecular");
-		listaCurso.add(2, "astrofisica");
-		listaCurso.add(3, "caligrafia");
-		listaCurso.add(4, "curriculum");
 	
-		int op = 0;
-	Scanner scanner = new Scanner(System.in); 
-
-	do {
-		System.out.println("");
-		System.out.println("Menu");
-		System.out.println("--------------------");
-		System.out.println("1.- Agregar persona");
-		System.out.println("2.- Eliminar persona");
-		System.out.println("3.- Mostrar todos");
-		System.out.println("4.- Salir del programa");
-		System.out.println("-------------------");
-		System.out.println("Ingrese una opcion: ");
-
-		op = scanner.nextInt();
-		
-		switch(op){
-			case 1:
-				agregarPersona();
-				break;
-			case 2:
-				darDeBaja(null);
-				break;
-			case 3:
-				muestraPersona();
-				break;
-			case 4: 
-				System.out.println("Adios!!!");
-				break;
-			default:
-				System.out.println("Ingrese una opcion valida");
-				break;
-		}
-		
-	}while (op != 4);
-
-	scanner.close();
-
-}
 }
