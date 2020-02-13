@@ -9,7 +9,6 @@ public class CentroDocente {
 	static ArrayList <Persona> listaPersona = new ArrayList <>(); // Hacer una lista de todas las personas
 	static ArrayList <Integer> listaDespachos = new ArrayList <>();// Asignar numero de despacho ( Empleados ) 
 
-	static ArrayList <Integer> listaseccion = new ArrayList <>();// Asignar una seccion ( P.servicio)
 
 	static ArrayList <String> listaSeccion = new ArrayList <>();// Asignar una seccion ( P.servicio)
 
