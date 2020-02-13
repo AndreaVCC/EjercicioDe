@@ -133,58 +133,7 @@ public class CentroDocente {
 	Scanner scanner = new Scanner(System.in); 
 >>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 
-			break ;
-		
-		
-		case 2 : 
-			PersonalServicio pserv = new PersonalServicio(null, null, null, null, null);// Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
-			System.out.print("Ingrese los Datos del Personal de Servicio");
 			
-			System.out.print("nombre: ");
-			pserv.setNombre(sc.next());
-			
-			System.out.print("apellido: ");
-			pserv.setApellidos(sc.next());
-			
-			System.out.println("ID : ");
-			pserv.setId(sc.next());
-			
-			System.out.println("Estado Civil : ");
-			pserv.setEstadoCivil(sc.next());
-			
-			System.out.println("Sección : ");
-			pserv.setEstadoCivil(sc.next());
-			
-			listaPersona.add(pserv);
-			
-			break ; 
-		
-		case 3: 
-			
-			Profesor prof = new Profesor (null, null, null, null, null); // Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
-			System.out.print("Ingrese los Datos del Profesor ");
-			
-			System.out.print("nombre: ");
-			prof.setNombre(sc.next());
-			
-			System.out.print("apellido: ");
-			prof.setApellidos(sc.next());
-			
-			System.out.println("ID : ");
-			prof.setId(sc.next());
-			
-			System.out.println("Estado Civil : ");
-			prof.setEstadoCivil(sc.next());
-			
-			System.out.println(" Departamento  : ");
-			prof.setEstadoCivil(sc.next());
-			
-			listaPersona.add(prof);
-			
-			break;
-		
-		
-		
 		}
 		
 	}
