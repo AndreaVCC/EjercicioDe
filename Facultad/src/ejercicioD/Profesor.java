@@ -5,6 +5,11 @@ public class Profesor extends Persona {
 	
 	//ATRIBUTO
     public String departamento;
+    public int anioIncorporacion; 
+    public int numDespacho;
+    
+  
+    
 
     //CONSTRUCTOR
     
@@ -14,29 +19,79 @@ public class Profesor extends Persona {
     	super ();
     }
     
-	public Profesor(String nombre, String apellidos, String id, String estadoCivil, String departamento) {
+    
+  
+    public Profesor(String nombre, String apellidos, String id, String estadoCivil, String departamento, int anioIncorporacion , int numDespacho) {
 		super(nombre, apellidos, id, estadoCivil);
+		// TODO Auto-generated constructor stub
 		this.departamento = departamento;
+		this.anioIncorporacion = anioIncorporacion; 
+		this.numDespacho = numDespacho ; 
 	}
+
 
 		
 	public void imprimir() {
 		
 	}
-	//SETT GETT
+	
+
+
+//SETT GETT
+
 	public String getDepartamento() {
 		return departamento;
 	}
+
+
 
 	public void setDepartamento(String departamento) {
 		this.departamento = departamento;
 	}
 
-	//toSTRING
+
+
+	public int getAnioIncorporacion() {
+		return anioIncorporacion;
+	}
+
+
+
+
+	public void setAnioIncorporacion(int anioIncorporacion) {
+		this.anioIncorporacion = anioIncorporacion;
+	}
+
+
+
+	public int getNumDespacho() {
+		return numDespacho;
+	}
+
+
+
+	public void setNumDespacho(int numDespacho) {
+		this.numDespacho = numDespacho;
+	}
+
+
+	
+	
+// TO STRING 
+	
+
 	@Override
 	public String toString() {
-		return super.toString() + "Profesor [departamento=" + departamento + "]";
+		return super.toString() + "Profesor [departamento=" + departamento + ", anioIncorporacion=" + anioIncorporacion + ", numDespacho="
+				+ numDespacho + "]";
 	}
+
+
+
+ 
+	
+	
+
 
 	//METODOS
 	   public void cambiarDepartamento(ArrayList<String> lista, String dep){
@@ -56,7 +111,22 @@ public class Profesor extends Persona {
 		  }else {
 			  System.out.print("no se encontró el departamento, cambio fallido");
 		  }		  
+
 	    }
 	
+	  
+	  public void reasignarDesopacho(int nudes ){
+	        this.numDespacho = nudes;
+	    }
 }
+
+
+
+
+
+
+
+
+
+//Comentarios tests
 

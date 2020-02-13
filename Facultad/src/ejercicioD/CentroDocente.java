@@ -25,7 +25,7 @@ public class CentroDocente {
 	// Metodo Agregar Persona 
 	public static void agregarPersona () { 
 		Scanner sc = new Scanner( System.in);// Creacion instancia escaner 
-		int TipoPersona; // creación de la variable local " TipoPersona" , así podremos seleccionar el tipo de persona ( estudiante, Personal de Servicio, Profesor) 
+		int TipoPersona; // Creación de la variable local " TipoPersona" , así podremos seleccionar el tipo de persona ( estudiante, Personal de Servicio, Profesor) 
 		
 		
 		
@@ -59,7 +59,7 @@ public class CentroDocente {
 		
 		
 		case 2 : 
-			PersonalServicio pserv = new PersonalServicio(null, null, null, null, null);// Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
+			PersonalServicio pserv = new PersonalServicio();// Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
 			System.out.print("Ingrese los Datos del Personal de Servicio");
 			
 			System.out.print("Nombre: ");
@@ -83,7 +83,7 @@ public class CentroDocente {
 		
 		case 3: 
 			
-			Profesor prof = new Profesor (null, null, null, null, null); // Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
+			Profesor prof = new Profesor (); // Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
 			System.out.print("Ingrese los Datos del Profesor ");
 			
 			System.out.print("Nombre: ");
@@ -108,7 +108,7 @@ public class CentroDocente {
 		
 		
 		}
-		
+		sc.close();
 	}
 	// Metodo remover persona ingresada en lista
 	public static void darDeBaja(String dni) {
