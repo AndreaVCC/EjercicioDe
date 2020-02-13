@@ -23,8 +23,8 @@ public class Profesor extends Persona {
 	}
 
      public void imprimir() {
-		
-	}
+ 		System.out.println("\nNombre: " + super.getNombre() + "\n Apellidos: " + super.getApellidos() + "\n ID: " + super.getId() + "\n Estado Civil: " + super.getEstadoCivil() + "\nDepartamento: " + this.departamento + "\nAño de Incorporación: " + this.anioIncorporacion + "/nNumero de Despacho: " + this.numDespacho);
+ 	}
 	
 //-------------------------------------------------------------------SETT GETT
 
@@ -75,11 +75,12 @@ public class Profesor extends Persona {
 		  if(d) {
 			  System.out.print("cambio exitoso");
 		  }else {
-			  System.out.print("no se encontró el departamento, cambio fallido");
+			  System.out.print("no se encontro el departamento, cambio fallido");
 		  }		  
 
 	    }
 	
+
 	   
 	   
 	   public void reasignarDespacho(ArrayList<Integer> listaDespachos, int nudes){
@@ -105,6 +106,8 @@ public class Profesor extends Persona {
 
 //--------------------------------------------------------------------Comentarios tests
 
+	  
+	  
 
 
 
