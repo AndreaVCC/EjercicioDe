@@ -75,7 +75,7 @@ public class Profesor extends Persona {
 		  if(d) {
 			  System.out.print("cambio exitoso");
 		  }else {
-			  System.out.print("no se encontró el departamento, cambio fallido");
+			  System.out.print("no se encontro el departamento, cambio fallido");
 		  }		  
 
 	    }
@@ -85,7 +85,7 @@ public class Profesor extends Persona {
 	        this.numDespacho = nudes;
 	    }
 }
-//---------------------------------------------------------------------Comentarios tests
+//---------------------------------------------------------------------
 
 
 

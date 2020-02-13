@@ -51,7 +51,7 @@ public class PersonalServicio extends Persona {
 				+ numDespacho + "]";
 	}
 // ---------------------------------------------------------------------Metodos
-	public void reasignarDesopacho(int nudes ){
+	public void reasignarDespacho(int nudes ){
 	        this.numDespacho = nudes;
 	    }
 	
