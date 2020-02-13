@@ -3,24 +3,17 @@ package ejercicioD;
 import java.util.ArrayList;
 public class Profesor extends Persona {
 	
-	//ATRIBUTO
+//--------------------------------------------------------------ATRIBUTO
     public String departamento;
     public int anioIncorporacion; 
     public int numDespacho;
     
-  
-    
-
-    //CONSTRUCTOR
-    
-    
+//-------------------------------------------------------------CONSTRUCTOR
     
     public Profesor() {
     	super ();
     }
-    
-    
-  
+   
     public Profesor(String nombre, String apellidos, String id, String estadoCivil, String departamento, int anioIncorporacion , int numDespacho) {
 		super(nombre, apellidos, id, estadoCivil);
 		// TODO Auto-generated constructor stub
@@ -29,71 +22,44 @@ public class Profesor extends Persona {
 		this.numDespacho = numDespacho ; 
 	}
 
-
-		
-	public void imprimir() {
+     public void imprimir() {
 		
 	}
 	
-
-
-//SETT GETT
+//------------------------------------------------------------------SETT GETT
 
 	public String getDepartamento() {
 		return departamento;
 	}
 
-
-
 	public void setDepartamento(String departamento) {
 		this.departamento = departamento;
 	}
-
-
 
 	public int getAnioIncorporacion() {
 		return anioIncorporacion;
 	}
 
-
-
-
 	public void setAnioIncorporacion(int anioIncorporacion) {
 		this.anioIncorporacion = anioIncorporacion;
 	}
-
-
 
 	public int getNumDespacho() {
 		return numDespacho;
 	}
 
-
-
 	public void setNumDespacho(int numDespacho) {
 		this.numDespacho = numDespacho;
 	}
 
-
-	
-	
-// TO STRING 
-	
-
+//-------------------------------------------------------------------- TO STRING 
 	@Override
 	public String toString() {
 		return super.toString() + "Profesor [departamento=" + departamento + ", anioIncorporacion=" + anioIncorporacion + ", numDespacho="
 				+ numDespacho + "]";
 	}
 
-
-
- 
-	
-	
-
-
-	//METODOS
+//--------------------------------------------------------------------METODOS
 	   public void cambiarDepartamento(ArrayList<String> lista, String dep){
 	      dep = dep.toLowerCase(); //validacion para que todos los nombres estén en minuscula 
 	      boolean d=false;
@@ -119,6 +85,7 @@ public class Profesor extends Persona {
 	        this.numDespacho = nudes;
 	    }
 }
+//--------------------------------------------------------------------Comentarios tests
 
 
 
@@ -128,5 +95,11 @@ public class Profesor extends Persona {
 
 
 
-//Comentarios tests
+
+
+
+
+
+
+
 

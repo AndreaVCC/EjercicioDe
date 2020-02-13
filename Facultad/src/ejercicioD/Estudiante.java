@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Estudiante extends Persona{
     
-	//ATRIBUTO  
+//--------------------------------------------------------------------ATRIBUTO  
 	private ArrayList<String> cursos = new ArrayList<>();
 
-	//CONSTRUCTOR 
+//--------------------------------------------------------------------CONSTRUCTOR 
 	public Estudiante() {
 		super();
 		this.cursos = null;
@@ -19,7 +19,8 @@ public class Estudiante extends Persona{
 		this.cursos.add(_curso); 
 	}
 	
-	/*/ GETT & SETT 
+//--------------------------------------------------------------------GETT & SETT
+/*/ GETT & SETT  
 	public String getCursos() {
 		
 		
@@ -30,11 +31,8 @@ public class Estudiante extends Persona{
 		this.cursos = curso;
 	}*/
 
-	// TO STRING 
-	
-	
+//-------------------------------------------------------------------- METODOS 
 	public void imprimir() {
-		
 		System.out.println("\nNombre: " + super.getNombre() + "\n Apellidos: " + super.getApellidos() + "\n ID: " + super.getId() + "\n Estado Civil: " + super.getEstadoCivil());
 		System.out.println("Cursos: ");
 		for(int i=0; i<cursos.size();i++) {
@@ -73,3 +71,16 @@ public class Estudiante extends Persona{
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

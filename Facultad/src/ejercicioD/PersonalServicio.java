@@ -6,13 +6,10 @@ public class PersonalServicio extends Persona {
 	private int anioIncorporacion; 
 	private int numDespacho;
 	    
-	// CONSTRUCTOR
-	
+//-------------------------------------------------------------------- CONSTRUCTOR
 	public PersonalServicio(){
 		super();
 	}
-
-
 
 	public PersonalServicio(String nombre, String apellidos, String id, String estadoCivil, String seccion , int anioIncorporacion, int numDespacho) {
 		super(nombre, apellidos, id, estadoCivil);
@@ -20,57 +17,36 @@ public class PersonalServicio extends Persona {
 		this.seccion = seccion; 
 		this.anioIncorporacion = anioIncorporacion;
 		this.numDespacho = numDespacho;
-		
-	}
+		}
 
-
-	// GETTERS Y SETTERS 
-
-
-	public void imprimir() {
-		
-	}
-	
+// --------------------------------------------------------------------GETTERS Y SETTERS 
 	
 	
 	public void setSeccion(String seccion) {
 		this.seccion = seccion;
 	}
 
-
 	public String getSeccion() {
 		return seccion;
 	}
-
-
-
-
 
 	public int getAnioIncorporacion() {
 		return anioIncorporacion;
 	}
 
-
-
 	public void setAnioIncorporacion(int anioIncorporacion) {
 		this.anioIncorporacion = anioIncorporacion;
 	}
-
-
 
 	public int getNumDespacho() {
 		return numDespacho;
 	}
 
-
-
 	public void setNumDespacho(int numDespacho) {
 		this.numDespacho = numDespacho;
 	}
  
-	
-	
-	// TO STRING 
+//-------------------------------------------------------------------- TO STRING 
 
 	@Override
 	public String toString() {
@@ -79,22 +55,31 @@ public class PersonalServicio extends Persona {
 	}
 
 	
-	
-	// Metodos
-	
-	 public void reasignarDesopacho(int nudes ){
+// --------------------------------------------------------------------Metodos
+	public void reasignarDesopacho(int nudes ){
 	        this.numDespacho = nudes;
 	    }
 	
-	 
-	 public void trasladoSeccion(String tsec ){
+	public void trasladoSeccion(String tsec ){
 	        this.seccion = tsec;
 	    }
 	
-
-	 
-	
-	
-	
-	
+	public void imprimir() {
+		}		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
