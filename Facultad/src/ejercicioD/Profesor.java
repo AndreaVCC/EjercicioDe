@@ -80,18 +80,36 @@ public class Profesor extends Persona {
 
 	    }
 	
-	  
-	  public void reasignarDesopacho(int nudes ){
-	        this.numDespacho = nudes;
-	    }
+	   
+	   
+	   public void reasignarDespacho(ArrayList<Integer> listaDespachos, int nudes){
+		      boolean d=false;
+			  							
+			  for(int i=0; i<listaDespachos.size(); i++) //------------------buscar en el arraylist  el numero de despacho 
+				  
+				  if(listaDespachos.get(i) == nudes) { //--------------------------------comparar int con lo que está dentro
+					
+					  this.numDespacho = nudes;
+					  d=true;
+				  }
+			  
+
+			  if(d) {
+				  System.out.print("cambio exitoso");
+			  }else {
+				  System.out.print("no se encontró el número de Despacho, cambio fallido");
+			  }		  
+
+		    }
+		
+
+//--------------------------------------------------------------------Comentarios tests
+
+
+
+
+
 }
-//---------------------------------------------------------------------Comentarios tests
-
-
-
-
-
-
 
 
 
