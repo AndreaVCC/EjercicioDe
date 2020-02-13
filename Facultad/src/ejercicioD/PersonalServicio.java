@@ -74,42 +74,15 @@ public class PersonalServicio extends Persona {
 			  System.out.print("no se encontró el número de Despacho, cambio fallido");
 		  }		  
 
-	    }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	    }	
 	
 	public void trasladoSeccion(String tsec ){
 	        this.seccion = tsec;
 	    }
 	
 	public void imprimir() {
+		System.out.println("\nNombre: " + super.getNombre() + "\n Apellidos: " + super.getApellidos() + "\n ID: " + super.getId() + "\n Estado Civil: " + super.getEstadoCivil());
+		System.out.println("\n Despacho: " + this.numDespacho + "\n Seccion: " + this.seccion + "\n Año Incorporaion: " + this.anioIncorporacion);
 		}		
 }
 
