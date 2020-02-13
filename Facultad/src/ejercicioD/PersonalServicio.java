@@ -20,8 +20,6 @@ public class PersonalServicio extends Persona {
 		}
 
 // ---------------------------------------------------------------------GETTERS Y SETTERS 
-	
-	
 	public void setSeccion(String seccion) {
 		this.seccion = seccion;
 	}
@@ -45,7 +43,6 @@ public class PersonalServicio extends Persona {
 	public void setNumDespacho(int numDespacho) {
 		this.numDespacho = numDespacho;
 	}
- 
 //--------------------------------------------------------------------- TO STRING 
 
 	@Override
@@ -53,8 +50,6 @@ public class PersonalServicio extends Persona {
 		return  super.toString()+ "PersonalServicio [seccion=" + seccion + ", anioIncorporacion=" + anioIncorporacion + ", numDespacho="
 				+ numDespacho + "]";
 	}
-
-	
 // ---------------------------------------------------------------------Metodos
 	public void reasignarDesopacho(int nudes ){
 	        this.numDespacho = nudes;
