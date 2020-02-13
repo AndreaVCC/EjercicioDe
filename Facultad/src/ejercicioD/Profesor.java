@@ -23,8 +23,8 @@ public class Profesor extends Persona {
 	}
 
      public void imprimir() {
-		
-	}
+ 		System.out.println("\nNombre: " + super.getNombre() + "\n Apellidos: " + super.getApellidos() + "\n ID: " + super.getId() + "\n Estado Civil: " + super.getEstadoCivil() + "\nDepartamento: " + this.departamento + "\nAño de Incorporación: " + this.anioIncorporacion + "/nNumero de Despacho: " + this.numDespacho);
+ 	}
 	
 //-------------------------------------------------------------------SETT GETT
 
