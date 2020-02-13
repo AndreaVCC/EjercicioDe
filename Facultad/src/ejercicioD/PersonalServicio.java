@@ -14,6 +14,10 @@ public class PersonalServicio extends Persona {
 		this.seccion = seccion;
 	}
 
+	public void imprimir() {
+		
+	}
+	
 	public void setSeccion(String seccion) {
 		this.seccion = seccion;
 	}

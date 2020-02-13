@@ -15,6 +15,9 @@ public class Persona {
 
     public Persona() {
     }
+    public void imprimir() {
+    	
+    }
 
     public String getNombre() {
         return nombre;

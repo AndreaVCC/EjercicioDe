@@ -19,6 +19,10 @@ public class Profesor extends Persona {
 		this.departamento = departamento;
 	}
 
+		
+	public void imprimir() {
+		
+	}
 	//SETT GETT
 	public String getDepartamento() {
 		return departamento;
