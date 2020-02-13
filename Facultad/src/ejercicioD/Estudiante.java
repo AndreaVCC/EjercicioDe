@@ -65,9 +65,9 @@ public class Estudiante extends Persona{
 			}
 		}
 		if(b) {
-			System.out.println("eliminación exitosa");
+			System.out.println("Eliminacion exitosa");
 		}else {
-			System.out.println("No se pudo eliminar, no se encontró el curso");
+			System.out.println("No se pudo eliminar, no se encuentra el curso");
 		}
 	}
 }
