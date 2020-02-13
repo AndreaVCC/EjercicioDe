@@ -22,39 +22,7 @@ public class CentroDocente {
 	}
 <<<<<<< HEAD
 	
-	// Metodo Agregar Persona 
-	public static void agregarPersona () { 
-		Scanner sc = new Scanner( System.in);// Creacion instancia escaner 
-		int TipoPersona; // creación de la variable local " TipoPersona" , así podremos seleccionar el tipo de persona ( estudiante, Personal de Servicio, Profesor) 
-		
-		
-		
-		System.out.println("Ingrese tipo de persona: 1.- Estudiante , 2.- Personal de Servicio , 3.- Profesor. ");// El usuario lee
-		TipoPersona = sc.nextInt(); // Estamos Leyendo La opcion ingresada por teclado de la variable "Tipo persona"  con la instancia de la clase Scanner. 
-		switch ( TipoPersona) { // DEfinicion de los casos segun el valor de la variable local.
-		
-		case 1 : 
-			Estudiante est = new Estudiante();// Instancia de la Clase Estudiante que incluye los atributos master y locales
-			System.out.print("Ingrese los Datos del Estudiante");
-			
-			System.out.print("nombre: ");
-			est.setNombre(sc.next());
-			
-			System.out.print("apellido: ");
-			est.setApellidos(sc.next());
-			
-			System.out.println("ID : ");
-			est.setId(sc.next());
-			
-			System.out.println("Estado Civil : ");
-			est.setEstadoCivil(sc.next());
-			
-			System.out.println(" Curso");
-			est.setCurso(sc.next());
-			
-			listaPersona.add(est);
-			
-=======
+
 	// Metodo Agregar Persona 
 	public static void agregarPersona () { 
 		Scanner sc = new Scanner( System.in);// Creacion instancia escaner 
