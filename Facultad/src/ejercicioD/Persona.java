@@ -1,31 +1,16 @@
 package ejercicioD;
 
-public abstract class Persona {
+public class Persona {
     String nombre;
     String apellidos;
     String id;
     String estadoCivil;
     
+
    
+    
 	public Persona() {
     }
-<<<<<<< HEAD
-    
-	public Persona(String nombre, String apellidos, String id, String estadoCivil) {
-		super();
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.id = id;
-		this.estadoCivil = estadoCivil;
-	}
-=======
-
-    public Persona() {
-    }
-    public void imprimir() {
-    	
-    }
->>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 
     public String getNombre() {
         return nombre;
@@ -60,10 +45,9 @@ public abstract class Persona {
     }
 
    
-    
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", id=" + id + ", estadoCivil=" + estadoCivil + '}';
+        return "Alumno{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", id=" + id + ", estadoCivil=" + estadoCivil + '}';
     }
     
     public void cambiarEstadoCivil(String est){

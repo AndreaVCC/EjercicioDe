@@ -39,7 +39,10 @@ public class Profesor extends Persona {
 	public void imprimir() {
 		
 	}
-	//SETT GETT
+	
+
+
+//SETT GETT
 >>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 	public String getDepartamento() {
 		return departamento;
