@@ -39,8 +39,23 @@ public class Profesor extends Persona {
 	}
 
 	//METODOS
-	  public void cambiarDepartamento(String dep){
-	        this.departamento = dep;
+	   public void cambiarDepartamento(ArrayList<String> lista, String dep){
+	      dep = dep.toLowerCase(); //validacion para que todos los nombres estén en minuscula 
+	      boolean d=false;
+		  //buscar en el arraylist que el departamento esté
+		  for(int i=0; i<lista.size(); i++) {
+			  //comparar string con lo que está dentro
+			  if(lista.get(i).equals(dep)) {
+				  //reemplazar el atributo departamento (dep)
+				  this.departamento = dep;
+				  d=true;
+			  }
+		  }
+		  if(d) {
+			  System.out.print("cambio exitoso");
+		  }else {
+			  System.out.print("no se encontró el departamento, cambio fallido");
+		  }		  
 	    }
 	
 }
