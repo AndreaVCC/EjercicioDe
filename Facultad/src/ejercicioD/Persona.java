@@ -9,6 +9,14 @@ public class Persona {
 
    
     
+	public Persona(String nombre, String apellidos, String id, String estadoCivil) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.id = id;
+		this.estadoCivil = estadoCivil;
+	}
+
 	public Persona() {
     }
 

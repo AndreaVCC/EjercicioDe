@@ -1,6 +1,6 @@
 package ejercicioD;
 
-
+import java.util.ArrayList;
 public class Profesor extends Persona {
 	
 	//ATRIBUTO
@@ -29,12 +29,7 @@ public class Profesor extends Persona {
 		this.numDespacho = numDespacho ; 
 	}
 
-<<<<<<< HEAD
 
-// GETT AND SETT
-	
-
-=======
 		
 	public void imprimir() {
 		
@@ -43,7 +38,7 @@ public class Profesor extends Persona {
 
 
 //SETT GETT
->>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
+
 	public String getDepartamento() {
 		return departamento;
 	}
@@ -59,6 +54,7 @@ public class Profesor extends Persona {
 	public int getAnioIncorporacion() {
 		return anioIncorporacion;
 	}
+
 
 
 
@@ -92,12 +88,30 @@ public class Profesor extends Persona {
 
 
 
-	//METODOS 
+ 
 	
 	
 
-	  public void cambiarDepartamento(String dep){
-	        this.departamento = dep;
+
+	//METODOS
+	   public void cambiarDepartamento(ArrayList<String> lista, String dep){
+	      dep = dep.toLowerCase(); //validacion para que todos los nombres estén en minuscula 
+	      boolean d=false;
+		  //buscar en el arraylist que el departamento esté
+		  for(int i=0; i<lista.size(); i++) {
+			  //comparar string con lo que está dentro
+			  if(lista.get(i).equals(dep)) {
+				  //reemplazar el atributo departamento (dep)
+				  this.departamento = dep;
+				  d=true;
+			  }
+		  }
+		  if(d) {
+			  System.out.print("cambio exitoso");
+		  }else {
+			  System.out.print("no se encontró el departamento, cambio fallido");
+		  }		  
+
 	    }
 	
 	  
@@ -106,7 +120,7 @@ public class Profesor extends Persona {
 	    }
 }
 
-<<<<<<< HEAD
+
 
 
 
@@ -115,5 +129,4 @@ public class Profesor extends Persona {
 
 
 //Comentarios tests
-=======
->>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
+
