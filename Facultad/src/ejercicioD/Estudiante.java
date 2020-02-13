@@ -6,6 +6,7 @@ public class Estudiante extends Persona{
 	private String curso;
 
 	//CONSTRUCTOR 
+	
 	public Estudiante() {
 		super();
 		// TODO Auto-generated constructor stub ok
