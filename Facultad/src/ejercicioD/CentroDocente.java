@@ -20,7 +20,6 @@ public class CentroDocente {
 			System.out.println(personita);
 		}
 	}
-<<<<<<< HEAD
 	
 
 	// Metodo Agregar Persona 
