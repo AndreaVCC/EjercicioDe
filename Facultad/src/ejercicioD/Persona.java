@@ -6,7 +6,7 @@ public class Persona {
     String id;
     String estadoCivil;
    
-//--------------------------------------------------------------------CONSTRUCTOR 
+//---------------------------------------------------------------------CONSTRUCTOR 
    public Persona(String nombre, String apellidos, String id, String estadoCivil) {
 		super();
 		this.nombre = nombre;
@@ -17,7 +17,7 @@ public class Persona {
 
 	public Persona() {
     }
-//-------------------------------------------------------------------- GEt & Set 
+//--------------------------------------------------------------------- GEt & Set 
     public String getNombre() {
         return nombre;
     }
@@ -49,12 +49,12 @@ public class Persona {
     public void setEstadoCivil(String estadoCivil) {
         this.estadoCivil = estadoCivil;
     }
-//-------------------------------------------------------------------- TO STRING
+//--------------------------------------------------------------------- TO STRING
    @Override
     public String toString() {
         return "Alumno{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", id=" + id + ", estadoCivil=" + estadoCivil + '}';
     }
-//-------------------------------------------------------------------- METODOS
+//--------------------------------------------------------------------- METODOS
     public void cambiarEstadoCivil(String est){
         this.estadoCivil = est;
     }

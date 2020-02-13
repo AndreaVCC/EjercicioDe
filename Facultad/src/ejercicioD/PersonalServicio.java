@@ -1,5 +1,4 @@
 package ejercicioD;
-import java.util.ArrayList;
 
 public class PersonalServicio extends Persona {
 
@@ -7,7 +6,7 @@ public class PersonalServicio extends Persona {
 	private int anioIncorporacion; 
 	private int numDespacho;
 	    
-//-------------------------------------------------------------------- CONSTRUCTOR
+//--------------------------------------------------------------------- CONSTRUCTOR
 	public PersonalServicio(){
 		super();
 	}
@@ -20,48 +19,15 @@ public class PersonalServicio extends Persona {
 		this.numDespacho = numDespacho;
 		}
 
-<<<<<<< HEAD
-// --------------------------------------------------------------------GETTERS Y SETTERS 
-=======
-
-	// GETTERS Y SETTERS 
-
-
-	public void imprimir() {
-		
-	}
-	
->>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
+// ---------------------------------------------------------------------GETTERS Y SETTERS 
 	
 	
 	public void setSeccion(String seccion) {
 		this.seccion = seccion;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 
 	public String getSeccion() {
 		return seccion;
-	}
-	
-	public void cambiarSeccion(ArrayList<String> listaseccion, Integer cambio ) {
-		boolean d = false;
-		
-		for(int i = 0; i<listaseccion.size(); i++) {
-			if(listaseccion.get(i).equals(cambio)) {
-				//Cambiamos valor Integer a String
-				this.seccion = Integer.toString(cambio);
-				d = true;
-			}
-		}
-		
-		if (d) {
-			System.out.println("Cambio Exitoso");
-		} else {
-			System.out.println("No se pudo realizar el cambio");
-		}
 	}
 
 	public int getAnioIncorporacion() {
@@ -80,7 +46,7 @@ public class PersonalServicio extends Persona {
 		this.numDespacho = numDespacho;
 	}
  
-//-------------------------------------------------------------------- TO STRING 
+//--------------------------------------------------------------------- TO STRING 
 
 	@Override
 	public String toString() {
@@ -89,7 +55,7 @@ public class PersonalServicio extends Persona {
 	}
 
 	
-// --------------------------------------------------------------------Metodos
+// ---------------------------------------------------------------------Metodos
 	public void reasignarDesopacho(int nudes ){
 	        this.numDespacho = nudes;
 	    }
