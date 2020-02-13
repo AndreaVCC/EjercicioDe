@@ -23,8 +23,18 @@ public class PersonalServicio extends Persona {
 		
 	}
 
+<<<<<<< HEAD
 	// GETTERS Y SETTERS 
 
+=======
+	public void imprimir() {
+		
+	}
+	
+	public void setSeccion(String seccion) {
+		this.seccion = seccion;
+	}
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 
 	public String getSeccion() {
 		return seccion;

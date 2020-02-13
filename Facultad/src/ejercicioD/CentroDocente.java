@@ -37,10 +37,10 @@ public class CentroDocente {
 			Estudiante est = new Estudiante();// Instancia de la Clase Estudiante que incluye los atributos master y locales
 			System.out.print("Ingrese los Datos del Estudiante");
 			
-			System.out.print("nombre: ");
+			System.out.print("Nombre: ");
 			est.setNombre(sc.next());
 			
-			System.out.print("apellido: ");
+			System.out.print("Apellido: ");
 			est.setApellidos(sc.next());
 			
 			System.out.println("ID : ");
@@ -50,7 +50,7 @@ public class CentroDocente {
 			est.setEstadoCivil(sc.next());
 			
 			System.out.println(" Curso");
-			est.setCurso(sc.next());
+			est.matriculaNuevoCurso(sc.next());
 			
 			listaPersona.add(est);
 			
@@ -62,10 +62,10 @@ public class CentroDocente {
 			PersonalServicio pserv = new PersonalServicio();// Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
 			System.out.print("Ingrese los Datos del Personal de Servicio");
 			
-			System.out.print("nombre: ");
+			System.out.print("Nombre: ");
 			pserv.setNombre(sc.next());
 			
-			System.out.print("apellido: ");
+			System.out.print("Apellido: ");
 			pserv.setApellidos(sc.next());
 			
 			System.out.println("ID : ");
@@ -74,8 +74,8 @@ public class CentroDocente {
 			System.out.println("Estado Civil : ");
 			pserv.setEstadoCivil(sc.next());
 			
-			System.out.println("Sección : ");
-			pserv.setEstadoCivil(sc.next());
+			System.out.println("Seccion : ");
+			pserv.setSeccion(sc.next());
 			
 			listaPersona.add(pserv);
 			
@@ -86,10 +86,10 @@ public class CentroDocente {
 			Profesor prof = new Profesor (); // Instancia de la Clase Personal de Servicio que incluye los atributos master y locales
 			System.out.print("Ingrese los Datos del Profesor ");
 			
-			System.out.print("nombre: ");
+			System.out.print("Nombre: ");
 			prof.setNombre(sc.next());
 			
-			System.out.print("apellido: ");
+			System.out.print("Apellido: ");
 			prof.setApellidos(sc.next());
 			
 			System.out.println("ID : ");
@@ -99,7 +99,7 @@ public class CentroDocente {
 			prof.setEstadoCivil(sc.next());
 			
 			System.out.println(" Departamento  : ");
-			prof.setEstadoCivil(sc.next());
+			prof.setDepartamento(sc.next());
 			
 			listaPersona.add(prof);
 			
@@ -115,9 +115,9 @@ public class CentroDocente {
 		for (int i = 0; i < listaPersona.size(); i++) {
 			if (listaPersona.get(i).getId().equals(dni)) {
 				listaPersona.remove(i);
-				System.out.println("¡Eliminación exitosa! :D!!");
+				System.out.println("Eliminacion exitosa! :D!!");
 			}else{
-				System.out.println("no se ha encontrado alguien con el id ingresado");
+				System.out.println("No se ha encontrado alguien con el id ingresado");
 			}		
 				
 
@@ -140,7 +140,7 @@ public class CentroDocente {
 		System.out.println("3.- Mostrar todos");
 		System.out.println("4.- Salir del programa");
 		System.out.println("-------------------");
-		System.out.println("Ingrese una opciÃ³n: ");
+		System.out.println("Ingrese una opcion: ");
 
 		op = scanner.nextInt();
 		
@@ -167,5 +167,4 @@ public class CentroDocente {
 	scanner.close();
 
 }
-
 }

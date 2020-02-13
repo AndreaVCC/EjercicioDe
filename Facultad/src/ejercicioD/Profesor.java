@@ -29,10 +29,18 @@ public class Profesor extends Persona {
 		this.numDespacho = numDespacho ; 
 	}
 
+<<<<<<< HEAD
 
 // GETT AND SETT
 	
 
+=======
+		
+	public void imprimir() {
+		
+	}
+	//SETT GETT
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
 	public String getDepartamento() {
 		return departamento;
 	}
@@ -95,6 +103,7 @@ public class Profesor extends Persona {
 	    }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -103,3 +112,5 @@ public class Profesor extends Persona {
 
 
 //Comentarios tests
+=======
+>>>>>>> branch 'master' of https://github.com/el-grupito-del-fondo/EjercicioDe.git
