@@ -83,7 +83,30 @@ public class PersonalServicio extends Persona {
 	public void imprimir() {
 		System.out.println("\nNombre: " + super.getNombre() + "\n Apellidos: " + super.getApellidos() + "\n ID: " + super.getId() + "\n Estado Civil: " + super.getEstadoCivil());
 		System.out.println("\n Despacho: " + this.numDespacho + "\n Seccion: " + this.seccion + "\n Año Incorporaion: " + this.anioIncorporacion);
-		}		
+		}	
+	
+	//----------------------------------TRASLADO DE SECCION --------------------------------------//
+	
+	 public void cambiartrasladoSeccion(ArrayList<String> listaseccion, String sec){
+	      sec = sec.toLowerCase(); //validacion para que todos los nombres estÃ©n en minuscula 
+	      boolean d=false;
+		  //buscar en el arraylist que la seccion estÃ©
+		  for(int i=0; i<listaseccion.size(); i++) {
+			  //comparar string con lo que estÃ¡ dentro
+			  if(listaseccion.get(i).equals(sec)) {
+				  //reemplazar el atributo seccion (des)
+				  this.seccion = sec;
+				  d=true;
+			  }
+		  }
+		  if(d) {
+			  System.out.print("cambio exitoso");
+		  }else {
+			  System.out.print("no se encontrÃ³ la seccion , cambio fallido");
+		  }		  
+
+	    }
+	 
 }
 
 
