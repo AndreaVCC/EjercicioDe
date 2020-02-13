@@ -1,6 +1,6 @@
 package ejercicioD;
 
-public class Persona {
+public abstract class Persona {
     String nombre;
     String apellidos;
     String id;
@@ -58,6 +58,10 @@ public class Persona {
     public void cambiarEstadoCivil(String est){
         this.estadoCivil = est;
     }
+	
+	public void imprimir(){
+		
+	}
 }
 
 
