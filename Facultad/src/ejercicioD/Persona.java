@@ -1,6 +1,6 @@
 package ejercicioD;
 
-public class Persona {
+public abstract class Persona {
     String nombre;
     String apellidos;
     String id;
@@ -53,7 +53,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Alumno{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", id=" + id + ", estadoCivil=" + estadoCivil + '}';
+        return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", id=" + id + ", estadoCivil=" + estadoCivil + '}';
     }
     
     public void cambiarEstadoCivil(String est){
